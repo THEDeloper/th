@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Roatán Activities 2025 | Ultra Luxury Collection</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --gold: #e5c07b;
+      --navy: #020617;
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Outfit', sans-serif; }
+    
+    body { 
+      background-color: var(--navy); 
+      color: var(--white); 
+      overflow-x: hidden;
+      background: radial-gradient(circle at 0% 0%, #0f172a 0%, #020617 100%);
+    }
+
+    /* Idioma Flotante - Optimizado para móviles */
+    .lang-container {
+      position: fixed; top: 15px; right: 15px; z-index: 2000;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(15px);
+      padding: 4px; border-radius: 50px; border: 1px solid var(--glass-border);
+      display: flex; gap: 2px;
+    }
+    .lang-btn {
+      background: transparent; border: none; color: #888;
+      padding: 6px 12px; cursor: pointer; border-radius: 50px;
+      font-weight: 700; font-size: 0.65rem; transition: 0.4s;
+      white-space: nowrap;
+    }
+    .lang-btn.active { background: var(--gold); color: var(--navy); }
+
+    /* Hero Section */
+    header {
+      height: 80vh; min-height: 500px; display: flex; flex-direction: column; 
+      justify-content: center; align-items: center; text-align: center;
+      position: relative; overflow: hidden; padding: 20px;
+    }
+    .hero-img {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: url('https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=1920&q=80') center/cover;
+      z-index: 0; transform: scale(1.1); animation: pan 30s infinite alternate;
+    }
+    .hero-video-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, transparent, var(--navy));
+      z-index: 1;
+    }
+    @keyframes pan { from { transform: scale(1); } to { transform: scale(1.15); } }
+
+    header h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 10vw, 7rem);
+      z-index: 2; line-height: 0.9; font-style: italic; margin-bottom: 20px;
+    }
+    .hero-badge {
+      z-index: 2; background: rgba(229, 192, 123, 0.2); color: var(--gold);
+      padding: 6px 18px; border-radius: 50px; font-weight: 700;
+      letter-spacing: 3px; font-size: 0.7rem; margin-bottom: 15px;
+      border: 1px solid var(--gold);
+    }
+
+    /* Grid Adaptable */
+    .container { max-width: 1400px; margin: auto; padding: 40px 20px; position: relative; z-index: 2; }
+    
+    .section-info { margin-bottom: 40px; text-align: left; }
+    .section-info h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); }
+    .section-info p { color: var(--gold); font-weight: 500; letter-spacing: 2px; font-size: 0.8rem; }
+
+    .grid {
+      display: grid;
+      /* RESPONSIVIDAD: 1 col móvil, 2 col tablet, 3-4 col PC */
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    /* Tarjetas */
+    .card {
+      background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 24px; overflow: hidden; transition: 0.4s ease;
+      display: flex; flex-direction: column;
+    }
+    
+    @media (min-width: 1024px) {
+      .card:hover { transform: translateY(-10px); border-color: var(--gold); }
+    }
+
+    .card-img { height: 240px; overflow: hidden; position: relative; }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    .price-tag {
+      position: absolute; bottom: 15px; right: 15px;
+      background: rgba(0,0,0,0.85); backdrop-filter: blur(10px);
+      padding: 6px 14px; border-radius: 50px; border: 1px solid var(--gold);
+      color: var(--gold); font-weight: 800; font-size: 0.9rem;
+    }
+
+    .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+    .card-body h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 10px; }
+    .card-body p { font-size: 0.9rem; color: #a1a1aa; margin-bottom: 20px; line-height: 1.5; }
+    
+    .btn-wa {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; padding: 16px; border-radius: 15px;
+      background: var(--white); color: var(--navy); text-decoration: none;
+      font-weight: 800; font-size: 0.8rem; text-transform: uppercase;
+      margin-top: auto; transition: 0.3s;
+    }
+    .btn-wa:hover { background: var(--gold); }
+
+    /* Footer */
+    footer { padding: 60px 20px 100px; text-align: center; background: rgba(0,0,0,0.4); margin-top: 60px; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 10px; }
+
+    /* WhatsApp Flotante Móvil */
+    .wa-float {
+      position: fixed; bottom: 20px; left: 20px;
+      width: 60px; height: 60px; background: #25d366;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4); z-index: 1000; color: white;
+    }
+
+    /* Ajustes para tablets (iPads) */
+    @media (max-width: 1024px) {
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    }
+
+    /* Ajustes para móviles */
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      header { height: 70vh; }
+      .container { padding: 20px; }
+      .lang-container { top: 10px; right: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-container">
+  <button class="lang-btn active" onclick="setLang('en', event)">ENGLISH</button>
+  <button class="lang-btn" onclick="setLang('es', event)">ESPAÑOL</button>
+</div>
+
+<header>
+  <div class="hero-img"></div>
+  <div class="hero-video-overlay"></div>
+  <div class="hero-badge">SINCE 2006</div>
+  <h1 id="hero-title">Experience<br>Roatán</h1>
+</header>
+
+<div class="container">
+  <div class="section-info">
+    <p id="sec-badge">Full Catalog 2025</p>
+    <h2 id="sec-title">Our Activities</h2>
+  </div>
+  
+  <div class="grid" id="mainGrid"></div>
+</div>
+
+<footer>
+  <div class="footer-logo">Roatán Activities</div>
+  <p id="footer-copy">West Bay Beach, Roatán, Honduras.</p>
+</footer>
+
+<a href="https://wa.me/50498061292" class="wa-float">
+  <i data-lucide="message-circle" size="30"></i>
+</a>
+
+<script>
+  let currentLang = 'en';
+
+  // Base de datos completa con los 28 servicios
+  const data = [
+    { id:1, price:"$75", img:"https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80", en:{title:"The Living Gardens", desc:"Botanical garden with lush greenery, vibrant flowers and a peaceful atmosphere.", cat:"Nature"}, es:{title:"Jardines Vivientes", desc:"Jardín botánico con vegetación exuberante, flores vibrantes y ambiente tranquilo.", cat:"Naturaleza"} },
+    { id:2, price:"$60", img:"https://images.unsplash.com/photo-1505118380757-91f5f45d8de4?auto=format&fit=crop&w=800&q=80", en:{title:"Glass Bottom Boat", desc:"1 hour boat ride with a glass bottom to see the reef. Kids < 5 Free.", cat:"Marine"}, es:{title:"Bote Fondo de Vidrio", desc:"Paseo de 1 hora con fondo de vidrio para ver el arrecife. Niños < 5 Gratis.", cat:"Marino"} },
+    { id:3, price:"$120", img:"https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80", en:{title:"Snuba Adventure", desc:"A hybrid activity between diving and snorkeling. No license needed.", cat:"Adventure"}, es:{title:"Aventura Snuba", desc:"Actividad híbrida entre buceo y snorkel. No requiere licencia.", cat:"Aventura"} },
+    { id:4, price:"$100", img:"https://images.unsplash.com/photo-1682687173028-145513010a63?auto=format&fit=crop&w=800&q=80", en:{title:"Night Snorkeling", desc:"1.5 hours of nocturnal underwater exploration. Magical experience.", cat:"Exclusive"}, es:{title:"Snorkel Nocturno", desc:"1 hora y media de exploración nocturna. Experiencia mágica.", cat:"Exclusivo"} },
+    { id:5, price:"$130", img:"https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80", en:{title:"Sunset Catamaran", desc:"All Inclusive: Open bar, snacks, and snorkeling. From 2 PM to Sunset.", cat:"Luxury"}, es:{title:"Catamarán al Atardecer", desc:"Todo Incluido: Open bar, snacks y snorkel. De 2 PM al atardecer.", cat:"Lujo"} },
+    { id:6, price:"$140", img:"https://images.unsplash.com/photo-1551009175-15bdf9dcb580?auto=format&fit=crop&w=800&q=80", en:{title:"Jetski", desc:"1 hour of high speed adrenaline. 30 mins available for $95.", cat:"Adrenaline"}, es:{title:"Motos de Agua", desc:"1 hora de adrenalina pura. 30 mins disponibles por $95.", cat:"Adrenalina"} },
+    { id:7, price:"$210/h", img:"https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&w=800&q=80", en:{title:"Deep Sea Fishing", desc:"Fishing on the 'Oso Goloso' boat. 2 hours minimum required.", cat:"Sport"}, es:{title:"Pesca de Altura", desc:"Pesca en el bote 'Oso Goloso'. Mínimo 2 horas.", cat:"Deporte"} },
+    { id:8, price:"$115", img:"https://images.unsplash.com/photo-1570481662006-a3a1374699e8?auto=format&fit=crop&w=800&q=80", en:{title:"Dolphin Encounter", desc:"Interact with dolphins. Upgrade to Swim for $155 (includes encounter).", cat:"Wildlife"}, es:{title:"Encuentro Delfines", desc:"Interactúa con delfines. Nado completo por $155 (incluye encuentro).", cat:"Vida Silvestre"} },
+    { id:9, price:"$85", img:"https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80", en:{title:"Zipline / Canopy", desc:"Fly over the jungle. Combine with Animal Park for $120 total.", cat:"Adventure"}, es:{title:"Zipline / Canopy", desc:"Vuela sobre la selva. Combina con Animal Park por $120 total.", cat:"Aventura"} },
+    { id:10, price:"$35", img:"https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=800&q=80", en:{title:"Banana Boat", desc:"20 minutes of group fun. Minimum 3 people required.", cat:"Family"}, es:{title:"Banana Boat", desc:"20 minutos de diversión grupal. Mínimo 3 personas.", cat:"Familia"} },
+    { id:11, price:"$140", img:"https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80", en:{title:"Little French Key", desc:"Transport, day pass, beach chair and animal park access included.", cat:"VIP"}, es:{title:"Little French Key", desc:"Transporte, day pass, silla de playa y parque de animales.", cat:"VIP"} },
+    { id:12, price:"$75", img:"https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=800&q=80", en:{title:"Snorkeling Tour", desc:"1 hour exploring the best reef spots. (Transport not included).", cat:"Marine"}, es:{title:"Tour de Snorkel", desc:"1 hora explorando los mejores puntos. (No incluye traslado).", cat:"Marino"} },
+    { id:13, price:"$105", img:"https://images.unsplash.com/photo-1596333522248-10186b428bd7?auto=format&fit=crop&w=800&q=80", en:{title:"Snorkeling Combo", desc:"2.5 hours, 2 snorkel spots and dolphin sighting from the boat.", cat:"Marine"}, es:{title:"Combo Snorkel", desc:"2.5 horas, 2 puntos de snorkel y avistamiento de delfines.", cat:"Marino"} },
+    { id:14, price:"$95", img:"https://images.unsplash.com/photo-1595191603743-96f755333f44?auto=format&fit=crop&w=800&q=80", en:{title:"Parasailing", desc:"Soar at 800 ft line height for the best view of West Bay.", cat:"Sky"}, es:{title:"Parasailing", desc:"Vuela a 800 pies de altura para la mejor vista de West Bay.", cat:"Cielo"} },
+    { id:15, price:"$95", img:"https://images.unsplash.com/photo-1598974357801-cbca100e65d3?auto=format&fit=crop&w=800&q=80", en:{title:"Horseback Riding", desc:"Guided ride through beach and jungle. Transport for 2+ pax.", cat:"Nature"}, es:{title:"Cabalgata", desc:"Paseo por la playa y selva. Transporte incluido para 2+ pax.", cat:"Naturaleza"} },
+    { id:16, price:"$140", img:"https://images.unsplash.com/photo-1505118380757-91f5f45d8de4?auto=format&fit=crop&w=800&q=80", en:{title:"Glass Boat Combo", desc:"Best of both: Snorkel and Glass Bottom boat tour. Kids < 5 Free.", cat:"Family"}, es:{title:"Combo Fondo Cristal", desc:"Lo mejor: Snorkel y tour en Bote de Fondo de Vidrio.", cat:"Familia"} },
+    { id:17, price:"$100", img:"https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80", en:{title:"Island Tour", desc:"Includes Mangrove tour or Iguana Farm. Minimum 4 people.", cat:"Culture"}, es:{title:"Tour de la Isla", desc:"Incluye tour de Manglares o Granja de Iguanas. Mínimo 4 pax.", cat:"Cultura"} },
+    { id:18, price:"$75", img:"https://images.unsplash.com/photo-1570288627283-4074574767b9?auto=format&fit=crop&w=800&q=80", en:{title:"Animal Park", desc:"Includes entrance and transport. See sloths and monkeys.", cat:"Wildlife"}, es:{title:"Parque Animal", desc:"Incluye entrada y transporte. Mira perezosos y monos.", cat:"Vida Silvestre"} },
+    { id:19, price:"$210", img:"https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&w=800&q=80", en:{title:"Palmetto Bay Trip", desc:"3 Snorkel stops (Shipwreck), open bar and snacks. Min 6 pax.", cat:"Luxury"}, es:{title:"Viaje Palmetto Bay", desc:"3 paradas de snorkel (Naufragio), open bar y snacks. Min 6 pax.", cat:"Lujo"} },
+    { id:20, price:"$250", img:"https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80", en:{title:"Pigeon Cay", desc:"All Inclusive island hopping. Open bar, snacks, lunch and snorkel.", cat:"Exotic"}, es:{title:"Pigeon Cay", desc:"Todo incluido. Visita varias islas, open bar, almuerzo y snorkel.", cat:"Exótico"} },
+    { id:21, price:"$210/h", img:"https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&w=800&q=80", en:{title:"Flat Fishing", desc:"Expert fishing for Bonefish, Permit and Tarpon. Max 2 pax.", cat:"Sport"}, es:{title:"Pesca en Planicie", desc:"Pesca experta de Macabí, Palometa y Sábalo. Máximo 2 pax.", cat:"Deporte"} },
+    { id:22, price:"$95", img:"https://images.unsplash.com/photo-1531737212413-667205e1cda7?auto=format&fit=crop&w=800&q=80", en:{title:"Quads / ATV", desc:"2.5 hours of off-road fun on 200cc automatic vehicles.", cat:"Adrenaline"}, es:{title:"Cuatrimotos / ATV", desc:"2.5 horas de diversión off-road en motos 200cc automáticas.", cat:"Adrenalina"} },
+    { id:23, price:"$120", img:"https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80", en:{title:"Monoloco Cruise", desc:"Exclusive tour. Option for 3 hours with 1 snorkel for $75.", cat:"Luxury"}, es:{title:"Crucero Monoloco", desc:"Tour exclusivo. Opción de 3 horas con 1 snorkel por $75.", cat:"Lujo"} },
+    { id:24, price:"$250", img:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80", en:{title:"Cayos Cochinos", desc:"All Inclusive expedition. Visit 3-4 islands with lunch included.", cat:"Exotic"}, es:{title:"Cayos Cochinos", desc:"Expedición Todo Incluido. Visita 3-4 islas con almuerzo.", cat:"Exótico"} },
+    { id:25, price:"$35", img:"https://images.unsplash.com/photo-1517176118179-65244ad0e59a?auto=format&fit=crop&w=800&q=80", en:{title:"Kayak / Paddle", desc:"Rentals for 1 hour. Clear Bottom Kayaks available for $45.", cat:"Sports"}, es:{title:"Kayak / Paddle", desc:"Renta por 1 hora. Kayaks de fondo transparente por $45.", cat:"Deportes"} },
+    { id:26, price:"$150", img:"https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80", en:{title:"Mangrove Tour", desc:"Authentic car and boat trip through the mangrove tunnels.", cat:"Nature"}, es:{title:"Tour de Manglares", desc:"Viaje auténtico en carro y bote por túneles de manglar.", cat:"Naturaleza"} },
+    { id:27, price:"$100", img:"https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80", en:{title:"Punta Gorda Tour", desc:"Cultural half or full day tour. Minimum 4 people required.", cat:"Culture"}, es:{title:"Punta Gorda Tour", desc:"Tour cultural de medio o día completo. Mínimo 4 personas.", cat:"Cultura"} },
+    { id:28, price:"$95", img:"https://images.unsplash.com/photo-1532151603504-20a7d9760777?auto=format&fit=crop&w=800&q=80", en:{title:"Flyboard", desc:"Experience the future. 15 minutes of flying over the sea.", cat:"Adrenaline"}, es:{title:"Flyboard", desc:"Experimenta el futuro. 15 minutos volando sobre el mar.", cat:"Adrenalina"} }
+  ];
+
+  const translations = {
+    en: { hero: "Experience<br>Roatán", secBadge: "Full Catalog 2025", secTitle: "Our Activities", btn: "Check Availability", footer: "West Bay Beach, Roatán, Honduras.", waMsg: "Hi! I am interested in " },
+    es: { hero: "Vive<br>Roatán", secBadge: "Catálogo Completo 2025", secTitle: "Nuestras Actividades", btn: "Consultar Disponibilidad", footer: "Playa West Bay, Roatán, Honduras.", waMsg: "¡Hola! Estoy interesado en " }
+  };
+
+  function render() {
+    const grid = document.getElementById('mainGrid');
+    grid.innerHTML = '';
+    data.forEach(item => {
+      const langData = item[currentLang];
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="card-img">
+          <img src="${item.img}" alt="${langData.title}">
+          <div class="price-tag">${item.price}</div>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 0.65rem; font-weight: 800; color: var(--gold); text-transform: uppercase; margin-bottom: 5px;">${langData.cat}</p>
+          <h3>${langData.title}</h3>
+          <p>${langData.desc}</p>
+          <a href="#" class="btn-wa" onclick="sendWa('${langData.title}')">
+            ${translations[currentLang].btn}
+            <i data-lucide="chevron-right" size="14"></i>
+          </a>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+    lucide.createIcons();
+  }
+
+  function setLang(lang, event) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    document.getElementById('hero-title').innerHTML = translations[lang].hero;
+    document.getElementById('sec-badge').innerText = translations[lang].secBadge;
+    document.getElementById('sec-title').innerText = translations[lang].secTitle;
+    document.getElementById('footer-copy').innerText = translations[lang].footer;
+    render();
+  }
+
+  function sendWa(name) {
+    const phone = "50498061292";
+    const msg = encodeURIComponent(translations[currentLang].waMsg + name);
+    window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+  }
+
+  render();
+</script>
+</body>
+</html>
